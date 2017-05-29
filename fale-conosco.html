@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Academia Birl</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+</head>
+<script>
+	function mudaFoto (foto)
+	{
+		document.getElementById("icone").src = foto;
+	}
+</script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Academia Birl</h1>
+	<h2>A busca pelo seu shape inexplicável está aqui</h2>
+	</hgroup>
+
+	<img id="icone" src="_imagens/k8664953.png"/>
+
+	<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul type> 
+		<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/k8664953.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('_imagens/fotos.png')"onmouseout="mudaFoto('_imagens/k8664953.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaFoto('_imagens/multimidia.png')"onmouseout="mudaFoto('_imagens/k8664953.png')"><a href="multimidia.html">Artigos</a></li>
+		<li onmouseover="mudaFoto('_imagens/aulas.png')"onmouseout="mudaFoto('_imagens/k8664953.png')"><a href="Aulas.html">Aulas</a></li>
+		<li onmouseover="mudaFoto('_imagens/contato.png')"onmouseout="mudaFoto('_imagens/k8664953.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+	</ul>
+	</nav>
+	</header>
+
+
+Fale Conosco > Contato
+<h2>Formulário de Contato</h2>
+<h3>por Henrique Hermogenes da Silva Fortes</h3>
+
+	
+	<form method="post" id="fContato" action="mailto: contato@academiabirl.com.br"/>
+		<fieldset id="user"><legend>Identificação do Usuário</legend>
+		
+			<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="25" maxlength="30" placeholder="Nome completo"/></p>
+			<p><label for="cCpf">CPF:</label><input type="text" name="tCpf" id="cCpf" size="11" maxlength="11" placeholder="apenas dígitos"/></p>
+			<p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+			<p><label for="confSenha">Confirmação de Senha:</label><input type="password" name="tcSenha" id="confSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+			<p><label for="cMail" >E-mail:</label><input type="email" name="tMail" id="cMail" size="25" maxlength="30"></p>
+			<fieldset id="sexo"><legend>Sexo:</legend>
+				<input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label><br/>
+				<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+			</fieldset>
+			<p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc"id="cNasc"/></p>
+		</fieldset>
+		
+			<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+			<p><label for="cRua">Logradouro:</label>
+			
+			
+			<select name="tLog" id"cLog">
+			<option>Alameda</option>
+			<option>Avenida</option>
+			<option>Balneário</option>
+			<option>Bloco</option>
+			<option>Chácara</option>
+			<option>Conjunto</option>
+			<option>Condomínio</option>
+			<option>Estrada</option>
+			<option>Fazenda</option>
+			<option>Galeria</option>
+			<option>Granja</option>
+			<option>Jardim</option>
+			<option>Largo</option>
+			<option>Loteamento</option>
+			<option>Praça</option>
+			<option>Praia</option>
+			<option>Parque</option>
+			<option>Quadra</option>
+			<option>Rua</option>
+			<option>Setor</option>
+			<option>Travessa</option>
+			<option>Vila</option>
+			</p>
+			
+			
+			
+			<input type="text" name="tRua" id="cRua" size="20" maxlength="70" placeholder="nome da rua"/>
+			<p><label for="cEst">Estado:</label>
+			<select name="tEst" id="cEst">
+				<option>Acre</option>
+				<option>Alagoas</option>
+				<option>Amazonas</option>
+				<option>Amapá</option>
+				<option>Bahia</option>
+				<option>Ceará</option>
+				<option>Distrito Federal</option>
+				<option>Espirito Santo</option>
+				<option>Goiás</option>
+				<option>Maranhão</option>
+				<option>Minas Gerais</option>
+				<option>Mato Grosso Sul</option>
+				<option>Mato Grosso</option>
+				<option>Pará</option>
+				<option>Paraíba</option>
+				<option>Pernambuco</option>
+				<option>Piauí</option>
+				<option>Paraná</option>
+				<option>Rio de Janeiro</option>
+				<option>Rio Grande do Norte</option>
+				<option>Rondônia</option>
+				<option>Roraima</option>
+				<option>Rio Grande do Sul</option>
+				<option>Santa Catarina</option>
+				<option>Sergipe</option>
+				<option>São Paulo</option>
+				<option>Tocantins</option>
+			</p>
+			<br/>
+			<p><label for="cCid">Cidade:</label></p>
+			<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Digite a cidade"/>
+			
+		</fieldset>
+		
+		
+		
+		<input type="image" name="tEnviar" src="_imagens/botao-enviar.png"/>
+
+	</form>
+<footer id="rodape">
+<p>Copyright &copy; 2016 - by Henrique Hermogenes da Silva Fortes <br/>
+<a href="https://www.facebook.com/KsRick">Facebook</a>
+<a href="mailto: fortes_henrique@hotmail.com">| Email</a> 
+</footer>
+</div>
+</body>
+</html>
